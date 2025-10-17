@@ -1,1 +1,27 @@
-# CAPTCHA Solver Demo A simple single-page web application demonstrating a CAPTCHA input and verification mechanism, styled with Tailwind CSS. It defaults to an attached sample image (sample.png) with a hardcoded solution. ## Features - Displays a CAPTCHA image. - Allows input for the CAPTCHA text. - Verifies the input against a known solution (for the default image). - Supports loading external CAPTCHA images via URL parameter. - Responsive design using Tailwind CSS. ## Usage 1. Open index.html in your browser. 2. The default CAPTCHA image will be sample.png (solution: "ADUR3"). 3. You can load a different image by appending `?url=https://example.com/your-captcha.png` to the URL. 4. Enter "ADUR3" in the text field and click "Verify" for the default image. ## Limitations The "solver" only knows the solution for sample.png. For other images loaded via URL, it acts as a verification interface without an inherent solving capability.
+# CAPTCHA Solver
+
+A simple CAPTCHA solver application with a dark theme interface.
+
+## Features
+
+*   Displays a CAPTCHA image (`sample.png` by default).
+*   Allows users to input the CAPTCHA text.
+*   Verifies the input against a predefined solution for the default image.
+*   Supports loading CAPTCHA images from a URL parameter (`?url=`).
+*   Provides instant feedback on verification.
+
+## Setup
+
+1.  Clone this repository.
+2.  Open `index.html` in your web browser.
+
+## Usage
+
+*   **Default Mode**: The application will display `sample.png`. Enter "ADUR3" to solve it.
+*   **Custom Image (Demo only)**: Append `?url=<image_url>` to the browser's URL to load a different image. Note that the verification logic only works for the default `sample.png` in this demo.
+
+## Technologies
+
+*   HTML
+*   JavaScript
+*   Tailwind CSS
